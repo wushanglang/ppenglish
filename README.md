@@ -8,34 +8,31 @@
 
 ##### 特点
 
-- AI翻译
-- markdown编辑
-- 夜间模式阅读
-- 双列排版沉浸式阅读 
+- 千问大模型AI翻译
+- 主流外刊文章，适配四六级、考研等英语学习者需求
+- 用户自定义布局
+  - 字体样式 fontFamily
+  - 字体大小 fontSize
+  - 行间距 lineHeight   
+  - 单双列布局
+  - 主题
+- markdown笔记（TODO） 
 
 <br>
 
-##### 基本流程
-![image](https://github.com/weiguic2w/bubble/assets/124777699/983d9713-2a1b-4ae7-b1d1-9d93d2c63451)
-![image](https://github.com/weiguic2w/bubble/assets/124777699/1f8392cb-a378-4a2e-98eb-6a5956285c74)
+##### 基本流程           
+![image](https://github.com/user-attachments/assets/d0376f4d-c34d-4153-8bbc-72cea6491585)
 
+![image](https://github.com/user-attachments/assets/1cd94160-a87e-4d36-aa30-cd09a2697109)
 
+![image](https://github.com/user-attachments/assets/b671e4c0-6826-4882-b216-61206d08326b)
 
-##### markdown编辑笔记
-
-![image](https://github.com/weiguic2w/bubble/assets/124777699/b2b709da-c3ab-40da-bd3e-da7a28a66769)
-
-
-##### 夜间模式
-
-![image](https://github.com/weiguic2w/bubble/assets/124777699/f55c492b-7945-473b-aaa4-d9dd972578ad)
-
-
+ 
 <br>
 
 ##### 数据来源
 
-文章来源于：https://taizihuang.github.io/ForeignAffairs/， 翻译由qwen-plus和网易智云提供。
+文章来源于：考研选题外刊， 翻译由qwen-plus和网易智云提供。
 
 <br>
 
@@ -47,7 +44,7 @@
 
 ##### 反馈           
 网站开源且长期更新，希望得到你的帮助。<br>
-如果你有好的想法或者文章数据源，请到  [github](https://github.com/weiguic2w/bubble)上提交issue。  
+如果你有好的想法或者文章数据源，请到  [github](https://github.com/wushanglang/ppenglish)上提交issue。  
 
 
 
