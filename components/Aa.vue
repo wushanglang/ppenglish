@@ -131,7 +131,7 @@ export default {
     if (savedStyles) {
       document.body.style.backgroundColor = savedStyles.backgroundColor;
       this.$emit("update:styles", savedStyles);
-    }
+    } else document.body.style.backgroundColor = "#222";
   },
   beforeDestroy() {
     document.removeEventListener("click", this.handleOutsideClick);
@@ -179,7 +179,6 @@ export default {
       }
       this.styles.theme = index;
 
-      // if (this.$route.fullPath === "/") return;
       document.body.style.backgroundColor = this.styles.backgroundColor;
     },
     updateFont(index) {
@@ -252,7 +251,7 @@ span {
   width: 80px;
   font-size: 24px;
 }
-.grid>div:hover{
+.grid > div:hover {
   background-color: #cab6b6;
 }
 
@@ -264,7 +263,7 @@ span {
   height: 40px;
   width: 100%;
 }
-.option>span>:hover{
+.option > span > :hover {
   background: #cab6b6;
 }
 </style>

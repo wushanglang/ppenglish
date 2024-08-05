@@ -4,8 +4,7 @@
       <div class="time">
         {{ article.time }}
       </div>
-      <div class="group">
-        <!-- <li> -->
+      <div class="group"> 
         <nuxt-link
           v-for="item in article.links"
           :key="item.to"
@@ -16,8 +15,7 @@
           <span class="tooltiptext">{{ item.cn_title }}</span>
           <h3 class="title">{{ item.title }}</h3>
           <p class="subtitle">{{ item.subtitle }}</p>
-        </nuxt-link>
-        <!-- </li> -->
+        </nuxt-link> 
       </div>
     </div>
   </div>
@@ -42,6 +40,18 @@ export default {
               title: "What Don’t We Know?",
               subtitle: "We have a lot to learn from studying our ignorance.",
               cn_title: "我们还都不知道什么？",
+            },
+            {
+              to: "/2408/3",
+              title: "“Wrong Way” Takes the Shine Off the Self-Driving Car",
+              subtitle: "Joanne McNeil’s novel suggests that much of what we think of as technological progress is a new way to obscure human labor.",
+              cn_title: "「反方向」让自动驾驶汽车光彩不再",
+            },
+            {
+              to: "/2408/2",
+              title: "Black Holes Are Even Weirder Than You Imagined",
+              subtitle: "It’s now thought that they could illuminate fundamental questions in physics, settle questions about Einstein’s theories, and even help explain the universe.",
+              cn_title: "黑洞比你想象的还要奇怪",
             },
           ],
         },
@@ -79,7 +89,7 @@ a {
   font-size: 1.6rem;
 }
 .article {
-  height: 160px;
+  height: 180px;
   min-width: 400px;
   background-color: #fafafa;
   padding: 8px 12px;
