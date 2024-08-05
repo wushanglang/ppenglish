@@ -2,16 +2,19 @@
 
 ##### 在线访问  
 - 国内：[ppenglish.tech](https://www.ppenglish.tech/) 
-- 国际：https://bubble-henna.vercel.app
+- 国际：https://ppenglish.vercel.app/
 
 <br>
 
 ##### 特点
 
 - AI翻译
-- markdown编辑
-- 夜间模式阅读
-- 双列排版沉浸式阅读 
+- 用户自定义布局：
+  - 字体样式fontfmaily
+  - 字体大小fontSize
+  - 行间距lineHeight
+  - 单双列布局
+  - 主题
 
 <br>
 
