@@ -1,13 +1,6 @@
 <template>
-  <div>
-    <Nav></Nav>
-    <nuxt-child></nuxt-child>
-  </div>
+  <div>123</div>
 </template>
  <script>
-export default {
-  mounted() {
-    this.$router.replace("/home/dashboard");
-  },
-};
+export default {};
 </script>

@@ -3,7 +3,7 @@
 <script>
 export default {
   mounted() {
-    this.$router.replace("/home/dashboard");
+    this.$router.replace("/home");
   },
 };
 </script>
