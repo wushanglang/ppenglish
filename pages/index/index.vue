@@ -48,7 +48,7 @@ export default {
               cn_title: "「反方向」让自动驾驶汽车光彩不再",
             },
             {
-              to: "/2408/2",
+              to: "/2408/4",
               title: "Black Holes Are Even Weirder Than You Imagined",
               subtitle: "It’s now thought that they could illuminate fundamental questions in physics, settle questions about Einstein’s theories, and even help explain the universe.",
               cn_title: "黑洞比你想象的还要奇怪",
