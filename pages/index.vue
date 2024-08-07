@@ -1,7 +1,7 @@
 <template>
   <div>
     <Aa
-      v-if="$route.fullPath !== '/'"
+      v-if="$route.fullPath !== '/' && $route.fullPath !== '/about'"
       :styles.sync="styles"
       :style="{ backgroundColor: styles.color, color: styles.backgroundColor }"
       class="toolbar-container"
@@ -33,6 +33,12 @@ export default {
   computed: {
     computedStyles() {
       if (this.$route.fullPath === "/") return null;
+      if (this.$route.fullPath === "/about")
+        return {
+          fontSize: "18px",
+          backgroundColor: "#fefefe",
+          color: "#222",
+        };
       return {
         fontSize: this.styles.fontSize * 2 + 16 + "px",
         lineHeight: this.styles.lineHeight * 0.2 + 1.0,

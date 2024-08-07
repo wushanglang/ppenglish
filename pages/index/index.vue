@@ -1,10 +1,11 @@
  <template>
   <div class="con">
+    <Nav class="nav"></Nav>
     <div v-for="article in data" :key="article.time">
       <div class="time">
         {{ article.time }}
       </div>
-      <div class="group"> 
+      <div class="group">
         <nuxt-link
           v-for="item in article.links"
           :key="item.to"
@@ -15,7 +16,7 @@
           <span class="tooltiptext">{{ item.cn_title }}</span>
           <h3 class="title">{{ item.title }}</h3>
           <p class="subtitle">{{ item.subtitle }}</p>
-        </nuxt-link> 
+        </nuxt-link>
       </div>
     </div>
   </div>
@@ -44,13 +45,15 @@ export default {
             {
               to: "/2408/3",
               title: "“Wrong Way” Takes the Shine Off the Self-Driving Car",
-              subtitle: "Joanne McNeil’s novel suggests that much of what we think of as technological progress is a new way to obscure human labor.",
+              subtitle:
+                "Joanne McNeil’s novel suggests that much of what we think of as technological progress is a new way to obscure human labor.",
               cn_title: "「反方向」让自动驾驶汽车光彩不再",
             },
             {
               to: "/2408/4",
               title: "Black Holes Are Even Weirder Than You Imagined",
-              subtitle: "It’s now thought that they could illuminate fundamental questions in physics, settle questions about Einstein’s theories, and even help explain the universe.",
+              subtitle:
+                "It’s now thought that they could illuminate fundamental questions in physics, settle questions about Einstein’s theories, and even help explain the universe.",
               cn_title: "黑洞比你想象的还要奇怪",
             },
           ],
@@ -60,17 +63,26 @@ export default {
     };
   },
   mounted() {
-    document.body.style.backgroundColor = "#fff";
+    document.body.style.backgroundColor = "#fefefe";
   },
 };
 </script>
 
 <style scoped>
+.con {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+.nav {
+  /* width: 100%;
+  position: absolute;
+  top: 0; */
+}
 .group {
   font-size: 16px;
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
 }
 @media (max-width: 700px) {
   .group {
@@ -79,18 +91,19 @@ export default {
 }
 a {
   color: #222;
+  text-decoration: none;
 }
 .subtitle {
   text-decoration: none;
 }
 .time {
   text-align: center;
-  color: #222;
+  color: #333;
   font-size: 1.6rem;
 }
 .article {
-  height: 180px;
-  min-width: 400px;
+  height: 160px;
+  min-width: 380px;
   background-color: #fafafa;
   padding: 8px 12px;
   border-radius: 4px;
@@ -104,13 +117,14 @@ a {
     0 0 0 0.0625rem rgba(129, 145, 181, 0.015);
 }
 .article:hover {
-  box-shadow: 0.0145rem 0.029rem 0.174rem rgba(69, 77, 97, 0.043),
-    0.0335rem 0.067rem 0.402rem rgba(69, 77, 97, 0.043),
-    0.0625rem 0.125rem 0.75rem rgba(69, 77, 97, 0.043),
-    0.1125rem 0.225rem 1.35rem rgba(69, 77, 97, 0.043),
-    0.2085rem 0.417rem 2.502rem rgba(69, 77, 97, 0.043),
-    0.5rem 1rem 6rem rgba(69, 77, 97, 0.043),
-    0 0 0 0.0625rem rgba(69, 77, 97, 0.043);
+  box-shadow: 0.0145rem 0.029rem 0.174rem rgba(69, 77, 97, 0.05),
+    0.0335rem 0.067rem 0.402rem rgba(69, 77, 97, 0.05),
+    0.0625rem 0.125rem 0.75rem rgba(69, 77, 97, 0.05),
+    0.1125rem 0.225rem 1.35rem rgba(69, 77, 97, 0.05),
+    0.2085rem 0.417rem 2.502rem rgba(69, 77, 97, 0.05),
+    0.5rem 1rem 6rem rgba(69, 77, 97, 0.05),
+    0 0 0 0.0625rem rgba(69, 77, 97, 0.05
+    );
 }
 </style> 
 
