@@ -72,12 +72,7 @@ export default {
 .con {
   max-width: 65rem;
   margin: 0 auto;
-}
-.nav {
-  /* width: 100%;
-  position: absolute;
-  top: 0; */
-}
+} 
 .group {
   font-size: 16px;
   display: grid;

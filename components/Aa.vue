@@ -1,8 +1,9 @@
 <template>
-  <div id="toolbar">
-    <div class="toolbar">
+  <div>
+    <div class="toolbar" v-if="toolBar">
       <div @click="$router.push('/')">Ho</div>
       <div @click="toggleToolDiv">Aa</div>
+      <div @click="editTag = !editTag">md</div>
     </div>
 
     <div v-if="toolDiv" class="toolDiv">
@@ -99,6 +100,8 @@
         </div>
       </div>
     </div>
+
+    <Editor v-if="editTag"></Editor>
   </div>
 </template> 
 
@@ -111,7 +114,10 @@ export default {
   },
   data() {
     return {
+      toolBar: true,
       toolDiv: false,
+      lastScrollTop: 0,
+      editTag: false,
     };
   },
   watch: {
@@ -126,17 +132,32 @@ export default {
     },
   },
   mounted() {
-    document.addEventListener("click", this.handleOutsideClick);
     const savedStyles = JSON.parse(localStorage.getItem("styles"));
     if (savedStyles) {
       document.body.style.backgroundColor = savedStyles.backgroundColor;
       this.$emit("update:styles", savedStyles);
     } else document.body.style.backgroundColor = "#222";
+    document.addEventListener("click", this.handleOutsideClick);
+    window.addEventListener("scroll", this.handleScroll);
   },
   beforeDestroy() {
+    window.removeEventListener("scroll", this.handleScroll);
     document.removeEventListener("click", this.handleOutsideClick);
   },
   methods: {
+    handleScroll() {
+      const currentScrollTop =
+        window.scrollY || document.documentElement.scrollTop;
+
+      if (currentScrollTop > this.lastScrollTop) {
+        this.toolBar = false;
+        this.toolDiv = false;
+      } else {
+        this.toolBar = true;
+      }
+
+      this.lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+    },
     toggleToolDiv(event) {
       this.toolDiv = !this.toolDiv;
       event.stopPropagation();
@@ -209,11 +230,6 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-}
-span {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
 }
 .theme-option {
   display: flex;

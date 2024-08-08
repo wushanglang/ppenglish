@@ -48,13 +48,7 @@ export default {
         gridTemplateColumns: this.styles.gridTemplateColumns,
       };
     },
-  },
-  mounted() {
-    window.addEventListener("scroll", this.handleScroll);
-  },
-  beforeDestroy() {
-    window.removeEventListener("scroll", this.handleScroll);
-  },
+  }, 
   methods: {
     handleScroll() {
       const currentScrollTop =
@@ -77,10 +71,10 @@ export default {
 .toolbar-container {
   text-align: center;
   user-select: none;
-  width: 3rem;
+  width: 2.2rem;
   font-size: 16px;
   position: fixed;
-  top: 45%;
+  bottom: 52%;
   right: 0;
   margin-left: auto;
   padding: 0.2rem;
