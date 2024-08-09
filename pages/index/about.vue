@@ -19,6 +19,7 @@
         <li>主流外刊文章，适配四六级、考研等英语学习者需求。</li>
         <li>用户自定义布局，提高阅读体验。</li>
         <li>markdown笔记</li>
+        <li>查词功能 - <a href="https://chromewebstore.google.com/detail/欧路翻译-网页划词翻译工具/djbfechcnkppbknmlhfcaoifgnicolin" target="_blank">欧路翻译 - 网页划词翻译工具 (google.com)</a></li>
       </ul>
 
       <h4>反馈</h4>
