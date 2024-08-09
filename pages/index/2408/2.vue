@@ -1,8 +1,8 @@
 <template>
 <div>
   <div class='parag' :style="{ gridTemplateColumns: gridTemplateColumns }">
-    <h2>What Don’t We Know?</h2>
-    <h2>我们还都不知道什么？</h2>
+    <h1>What Don’t We Know?</h1>
+    <h1>我们还都不知道什么？</h1>
   </div>
   <div class='parag' :style="{gridTemplateColumns: gridTemplateColumns,  marginBottom: '24px'}">
     <h5>We have a lot to learn from studying our ignorance.</h5>

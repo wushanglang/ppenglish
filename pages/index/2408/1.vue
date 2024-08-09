@@ -1,8 +1,8 @@
 <template>
 <div>
   <div class='parag' :style="{ gridTemplateColumns: gridTemplateColumns }">
-    <h2>Kamala Harris and the Legacy of Bidenomics</h2>
-    <h2>卡玛拉·哈里斯与“拜登经济学”遗产</h2>
+    <h1>Kamala Harris and the Legacy of Bidenomics</h1>
+    <h1>卡玛拉·哈里斯与“拜登经济学”遗产</h1>
   </div>
   <div class='parag' :style="{gridTemplateColumns: gridTemplateColumns,  marginBottom: '24px'}">
     <h5>How the Vice-President’s economic approach might build upon, and differ from, that of her predecessor.</h5>

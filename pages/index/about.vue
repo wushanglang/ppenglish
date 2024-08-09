@@ -18,7 +18,7 @@
         </li>
         <li>主流外刊文章，适配四六级、考研等英语学习者需求。</li>
         <li>用户自定义布局，提高阅读体验。</li>
-        <li>markdown笔记（TODO）</li>
+        <li>markdown笔记</li>
       </ul>
 
       <h4>反馈</h4>
