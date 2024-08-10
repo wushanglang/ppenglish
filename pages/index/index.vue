@@ -58,6 +58,39 @@ export default {
             },
           ],
         },
+        {
+          time: "2024-07",
+          links: [
+            {
+              to: "/2407/1",
+              title: "The Macabre Ironies of “Trap”",
+              subtitle:
+                "Lurking beneath M. Night Shyamalan’s new thriller are the commonplace horrors of family life.",
+              cn_title: "“Trap”里的恐怖与讽刺",
+            },
+            {
+              to: "/2407/2",
+              title: "In the Age of A.I., What Makes People Unique?",
+              subtitle:
+                "More than ever, we’re challenged to define what’s valuable about being human.",
+              cn_title: "在人工智能时代，是什么让人与众不同？",
+            },
+            {
+              to: "/2407/3",
+              title: "The Supreme Court Needs Fixing, but How?",
+              subtitle:
+                "Joanne McNeil’s novel suggests that much of what we think of as technological progress is a new way to obscure human labor.",
+              cn_title: "最高法院需要修补，但如何修？",
+            },
+            {
+              to: "/2407/4",
+              title: "“Weird” Is a Rebuke to Republican Dominance Politics",
+              subtitle:
+                "The Democrats’ new favorite attack line has less to do with their opponents’ distance from the norm than with their desired level of control.",
+              cn_title: "“Weird” 是对共和党主导政治的驳斥",
+            },
+          ],
+        },
       ],
       darkTheme: false,
     };
@@ -72,7 +105,7 @@ export default {
 .con {
   max-width: 65rem;
   margin: 0 auto;
-} 
+}
 .group {
   font-size: 16px;
   display: grid;
@@ -92,12 +125,13 @@ a {
   text-decoration: none;
 }
 .time {
+  margin-top: 1.2rem;
   text-align: center;
-  color: #333;
-  font-size: 1.6rem;
+  color: #555;
+  font-size: 1.2rem;
 }
 .article {
-  height: 160px;
+  height: 155px;
   min-width: 380px;
   background-color: #fafafa;
   padding: 8px 12px;
@@ -118,8 +152,7 @@ a {
     0.1125rem 0.225rem 1.35rem rgba(69, 77, 97, 0.05),
     0.2085rem 0.417rem 2.502rem rgba(69, 77, 97, 0.05),
     0.5rem 1rem 6rem rgba(69, 77, 97, 0.05),
-    0 0 0 0.0625rem rgba(69, 77, 97, 0.05
-    );
+    0 0 0 0.0625rem rgba(69, 77, 97, 0.05);
 }
 </style> 
 
