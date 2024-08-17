@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="toolbar" v-if="toolBar">
-      <div @click="$router.push('/')">Ho</div>
-      <div @click="toggleToolDiv">Aa</div>
+    <div class="toolbar">
+      <div v-if="toolBar" @click="$router.push('/')">Ho</div>
+      <div v-if="toolBar" @click="toggleToolDiv">Aa</div>
       <div @click="editTag = !editTag">md</div>
     </div>
 
