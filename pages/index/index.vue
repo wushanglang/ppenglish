@@ -28,6 +28,39 @@ export default {
     return {
       data: [
         {
+          time: "2024-09",
+          links: [
+            {
+              to: "/2409/1",
+              title: "Was Linguistic A.I. Created by Accident?",
+              cn_title: "语言人工智能是无意中创造出来的吗？",
+              subtitle:
+                "Seven years after inventing the transformer—the “T” in ChatGPT—the researchers behind it are still grappling with its surprising power.",
+            },
+            {
+              to: "/2409/2",
+              title: "Are We Living in the Age of Info-Determinism?",
+              cn_title: "我们生活在信息决定论时代吗？",
+              subtitle:
+                "Increasingly, our networks seem to be steering our history in ways we don’t like and can’t control.",
+            },
+            {
+              to: "/2409/3",
+              title: "What Does It Really Mean to Learn?",
+              cn_title: "学习的真正含义是什么？",
+              subtitle:
+                "A leading computer scientist says it’s “educability,” not intelligence, that matters most.",
+            },
+            {
+              to: "/2409/4",
+              title: "What Can We Learn from Menstrual Blood?",
+              cn_title: "月经血能告诉我们什么？",
+              subtitle:
+                "By drawing data out of tampons and pads, startups hope to shed light on poorly understood diseases.",
+            },
+          ],
+        },
+        {
           time: "2024-08",
           links: [
             {
