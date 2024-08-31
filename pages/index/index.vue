@@ -1,22 +1,24 @@
  <template>
   <div class="con">
     <Nav class="nav"></Nav>
-    <div v-for="article in data" :key="article.time">
-      <div class="time">
-        {{ article.time }}
-      </div>
-      <div class="group">
-        <nuxt-link
-          v-for="item in article.links"
-          :key="item.to"
-          class="article tooltip"
-          :to="item.to"
-          :class="{ active: $route.path.startsWith(item.to) }"
-        >
-          <span class="tooltiptext">{{ item.cn_title }}</span>
-          <h3 class="title">{{ item.title }}</h3>
-          <p class="subtitle">{{ item.subtitle }}</p>
-        </nuxt-link>
+    <div class="months">
+      <div v-for="article in data" :key="article.time">
+        <div class="time">
+          {{ article.time }}
+        </div>
+        <div class="group">
+          <nuxt-link
+            v-for="item in article.links"
+            :key="item.to"
+            class="article tooltip"
+            :to="item.to"
+            :class="{ active: $route.path.startsWith(item.to) }"
+          >
+            <span class="tooltiptext">{{ item.cn_title }}</span>
+            <h3 class="title">{{ item.title }}</h3>
+            <p class="subtitle">{{ item.subtitle }}</p>
+          </nuxt-link>
+        </div>
       </div>
     </div>
   </div>
@@ -139,6 +141,11 @@ export default {
   max-width: 65rem;
   margin: 0 auto;
 }
+.months {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
 .group {
   font-size: 16px;
   display: grid;
@@ -155,16 +162,15 @@ a {
   text-decoration: none;
 }
 .subtitle {
+  font-size: .9rem;
   text-decoration: none;
 }
 .time {
-  margin-top: 1.2rem;
   text-align: center;
-  color: #555;
-  font-size: 1.2rem;
+  color: #8d94aa;
 }
 .article {
-  height: 155px;
+  height: 145px;
   min-width: 380px;
   background-color: #fafafa;
   padding: 8px 12px;
